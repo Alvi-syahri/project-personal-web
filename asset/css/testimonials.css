@@ -1,0 +1,11 @@
+.testimonials-star-button{
+    display: flex;
+    justify-content: center;
+}
+.testimonials-star-button button{
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 10px 25px;
+    color:whitesmoke;
+}

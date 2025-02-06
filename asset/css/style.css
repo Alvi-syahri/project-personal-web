@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+}
+
+/* navbar */
+nav{
+    background-color: #aaa;
+    padding: 10px 25px;
+}
+
+.menu-active {
+    color:orangered!important;
+}
+
+.main-menu{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.mobile-menu{
+    display: none;
+    
+}
+
+.hamburger-button{
+    font-size: 36px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mobile-menu-list a{
+     display: none;
+     
+}
+
+.navbar-links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-contact-button{
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 10px 25px;
+    color:whitesmoke;
+
+    
+
+}
+
+/* profile card */
+ /* #card-section{
+    flex:1;
+    width: 100% auto;
+   
+}  */
+
+.profile-card{
+    border-style: solid;
+    border-color: #aaa;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 10px #aaa;
+    /* max-width: 400px; */
+    padding: 15px;
+    /* flex: ; */
+    /* margin: 100px auto;*/
+     
+}
+
+.profile-table{
+    border-style: solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.contact-form{
+    width:500px;
+    margin: 100px auto;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 10px; 
+}
+
+.form-field input,select,textarea{
+    background-color: #aaa;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px #aaa;
+}
+
+/* profile introduction */
+
+/* #introduction{
+    flex: 3;
+} */
+
+.main-content {
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+}
+
+
+#what-i-do h1 {
+    margin-top: 0px;
+}
+#technologies{
+    display: flex;
+    gap: 20px;
+}
+#sicials h2{
+    margin-top: 0;
+}
+#socials a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+#socials a img {
+    width: 40px;
+}
+
+
+/* contact form */
+.contact-form button{
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 10px 25px;
+    color:whitesmoke;
+    border: none;
+    
+}
+
+/* blog form */
+
+.create-blog-form{
+    width:500px;
+    margin: 100px auto;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 10px; 
+}
+
+.button-container{
+    text-align: right;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 10px; 
+}
+
+/* blog list styal */
+.blog-list{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.blog-item{
+    height: 250px;
+    padding: 15px;
+    border: 1px solid #aaa;
+    display: flex;
+    gap: 15px;
+}
+.blog-item-img img{
+    height: 100%;
+}
+.blog-item-text{
+    flex: 1;
+}
+.blog-item-button{
+    text-align: right;
+}
+blo
+/* blog detail style */
+.blog-detail{
+    width: 60%;
+    margin: 40px auto;
+}
+
+.blog-detail img{
+    width: 100%;
+}
+
+@media screen and (max-width :768px){
+    .main-menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-show{
+        display: block;
+    }
+    .mobile-menu-hide{
+        display: none;
+    }
+
+    .mobile-menu-list a{
+        display: block;
+        text-decoration: none;
+        border: 1px solid #fff;
+        background-color: #aaa;
+        text-align: center;
+        padding: 10px 0;
+        color: black;
+   }
+    .main-content{
+        flex-direction: column;
+    }
+
+
+    #card-sectiont{
+        padding: 30px;
+    }
+    
+    #technologies{
+        flex-direction: column;
+    }
+
+
+    #technologies h2{
+        margin: 5px 0;
+    }
+}

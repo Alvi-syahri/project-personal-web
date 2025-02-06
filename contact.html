@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>personal-web2</title>
+        <link rel="stylesheet" href="asset/css/style.css">
+    </head>
+
+    <body>
+        <!-- navbar -->
+        <nav>
+            <div class="main-menu">
+             <ul class="navbar-links">
+                <img src="asset/img/logo.png" alt="">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+             </ul>
+                <a class="nav-contact-button" href="contact.html">Contact Me</a>
+    
+            </div>
+            <div class="mobile-menu">
+                <img src="asset/img/logo.png" alt="">
+                <button id="hamburger-button" class="hamburger-button">☰</button>
+            </div>
+            </nav>
+    
+            <div id="mobile-menu-list" class="mobile-menu-list mobile-menu-hide">
+                <a href="index.html" >Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact me</a>
+            </div>
+
+        <!-- form -->
+
+        <form class="contact-form" onsubmit="submitForm(event)">
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" type="text"required>
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" type="text" required >
+            </div>
+            <div class="form-field">
+                <label for="subjek">subjek</label>
+                <input id="subjek" type="text"required>
+            </div>
+            <div class="form-field">
+                <label for="Skill">Skill</label>
+            <select id="Skill" required>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+            </select>
+            </div>
+            <div class="form-field">
+                <label for="massage">massage</label>
+            <textarea id="massage"required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+            
+        </form>
+
+        <script src="asset/js/contact-form-js.js"></script>
+        <script src="asset/js/navbar.js"></script>
+    </body>
+</html>

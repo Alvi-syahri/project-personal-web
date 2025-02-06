@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>personal-web2</title>
+        <link rel="stylesheet" href="asset/css/style.css">
+    </head>
+
+    <body>
+        <!-- navbar -->
+        <nav>
+            <div class="main-menu">
+             <ul class="navbar-links">
+                <img src="asset/img/logo.png" alt="">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="blog.html" class="menu-active" >Blog</a>
+                </li>
+             </ul>
+                <a class="nav-contact-button" href="contact.html">Contact Me</a>
+    
+            </div>
+            <div class="mobile-menu">
+                <img src="asset/img/logo.png" alt="">
+                <button id="hamburger-button" class="hamburger-button">☰</button>
+            </div>
+            </nav>
+    
+            <div id="mobile-menu-list" class="mobile-menu-list mobile-menu-hide">
+                <a href="index.html" >Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact me</a>
+            </div>
+        <!-- creat blog-->
+
+        <form id="create-blog" class="create-blog-form" onsubmit="addBlog(event)">
+            <h1>Create Blog</h1>
+
+            <div class="form-field">
+                <label for="title">judul</label>
+                <input id="title" type="text"required>
+            </div>
+
+            <div class="form-field">
+                <label for="content">content</label>
+            <textarea id="content" rows="7" required></textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="image">Upload Image</label>
+                <input
+                  type="file"
+                  id="image"
+                  name="uploadImage"
+                  accept="image/*"
+                />
+              </div>
+
+            <div class="button-container">
+                <button type="submit">submit</button>
+            </div>
+
+        </form>
+
+        <!-- blog list -->
+         <section id="blogList" class="blog-list">
+            <article class="blog-item">
+                <div class="blog-item-img">
+                    <img src="asset/img/gambar.jpg" alt="foto">
+                </div>
+
+                <div class="blog-item-text">
+                    <div class="blog-item-button">
+                        <button>edit blog</button>
+                        <button>post blog</button>
+                    </div>
+                    <h1>pasarcoding indonesia</h1>
+                    <p>30 januari 2025</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </article>
+         </section>
+
+         <script src="asset/js/blog.js"></script>
+         <script src="asset/js/navbar.js"></script>
+
+    </body>
+</html>
