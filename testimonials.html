@@ -6,17 +6,20 @@
         <link rel="stylesheet" href="asset/css/testimonials.css">
     </head>
 
-    <body>
+    <body> 
         <!-- navbar -->
         <nav>
         <div class="main-menu">
          <ul class="navbar-links">
             <img src="asset/img/logo.png" alt="">
             <li>
-                <a href="index.html" class="menu-active" >Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
                 <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="testimonials.html" class="menu-active" >Testimonials</a>
             </li>
          </ul>
             <a class="nav-contact-button" href="contact.html">Contact Me</a>
@@ -34,34 +37,36 @@
             <a href="contact.html">Contact me</a>
         </div>
 
-        <!-- main content -->
+        <!-- main content testimonials-->
 
         <main>
-            <h1 style="text-align: center;">my testimonial</h1>
-            <h3 style="text-align: center;">rating by star</h3>
+            <h1 style="text-align: center;">My Testimonial</h1>
+            <h3 style="text-align: center;">Rating by star</h3>
 
             <!-- star button -->
              <div class="testimonials-star-button">
-                <button>all</button>
-                <button>1★</button>
-                <button>2★</button>
-                <button>3★</button>
-                <button>4★</button>
-                <button>5★</button>
+                <button onclick="showAllTestimonials()" >all</button>
+                <button onclick="filterTestimonialsByStar(1)">1★</button>
+                <button onclick="filterTestimonialsByStar(2)">2★</button>
+                <button onclick="filterTestimonialsByStar(3)">3★</button>
+                <button onclick="filterTestimonialsByStar(4)">4★</button>
+                <button onclick="filterTestimonialsByStar(5)">5★</button>
              </div>
 
              <!-- testimonial list -->
-              <div>
-                <article>
-                    <img src="" alt="">
-                    <p>keren banget website nya</p>
-                    <p>alvi syahri</p>
-                    <p>5</p>
-                </article>
+              <div id="testimonialsContainer" class="testimonial-list" >
+                <!-- <article>
+                    <img src="asset/img/coding.jpg" alt="">
+                    <p class="testimonial-item" >"keren banget website nya"</p>
+                    <p style="text-align: right;">Alvi syahri</p>
+                    <p style="text-align: right;font-weight: bold;">5★</p>
+                </article> -->
+                <p>Loading....</p>
               </div>
         </main>
     
         
         <script src="asset/js/navbar.js"></script>
+        <script src="asset/js/testimonials.js"></script>
     </body>
 </html>

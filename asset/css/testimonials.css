@@ -9,3 +9,30 @@
     padding: 10px 25px;
     color:whitesmoke;
 }
+
+.testimonial-list{
+    width: 80%;
+    column-gap:10px ;
+    gap: 10px;
+    /* background-color: aquamarine; */
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.testimonial-list article{
+    /* background-color: coral; */
+    border: 1px solid #aaa;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.testimonial-list article img{
+    width: 100%;
+}
+
+.testimonial-item {
+    font-style: italic;
+    color: #777;
+}
