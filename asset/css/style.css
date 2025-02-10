@@ -8,6 +8,16 @@ nav{
     padding: 10px 25px;
 }
 
+.btn-orangered{
+    text-decoration: none ;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 10px 25px;
+    color:whitesmoke;
+    border: none;
+
+}
+
 .menu-active {
     color:orangered!important;
 }
@@ -61,22 +71,22 @@ nav{
 
 }
 
+
 /* profile card */
- /* #card-section{
-    flex:1;
-    width: 100% auto;
+ #card-section{
+    /* flex:1; */
+    /* width: 100% auto; */
    
-}  */
+} 
 
 .profile-card{
     border-style: solid;
     border-color: #aaa;
     border-radius: 15px;
     box-shadow: 0px 0px 30px 10px #aaa;
-    /* max-width: 400px; */
     padding: 15px;
-    /* flex: ; */
-    /* margin: 100px auto;*/
+    
+    
      
 }
 
@@ -108,9 +118,10 @@ nav{
 
 /* profile introduction */
 
-/* #introduction{
-    flex: 3;
-} */
+#introduction{
+    /* flex: 2; */
+    /* width: 100% auto; */
+}
 
 .main-content {
     display: flex;

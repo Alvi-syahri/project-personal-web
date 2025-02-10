@@ -9,69 +9,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <body>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="asset/img/logo.png" alt="personal-web" width="50" >
-                  </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="testimonials.html">Testimonials</a>
-                  </li>
-                 
-                </ul>
-                <button type="button" class="btn-orangered">
-                    <a class="nav-link" href="contact.html">Contact Me</a>
-                </button>
-                
-              </div>
-            </div>
-          </nav>
+        <nav>
+        <div class="main-menu">
+         <ul class="navbar-links">
+            <img src="asset/img/logo.png" alt="">
+            <li>
+                <a href="index.html" class="menu-active" >Home</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="testimonials.html" >Testimonials</a>
+            </li>
+         </ul>
+            <a class="nav-contact-button" href="contact.html">Contact Me</a>
 
-        <!-- <div id="mobile-menu-list" class="mobile-menu-list mobile-menu-hide">
+        </div>
+        <div class="mobile-menu">
+            <img src="asset/img/logo.png" alt="">
+            <button id="hamburger-button" class="hamburger-button">☰</button>
+        </div>
+        </nav>
+
+        <div id="mobile-menu-list" class="mobile-menu-list mobile-menu-hide">
             <a href="index.html" >Home</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact me</a>
             <a href="testimonials.html" >testimonials</a>
-        </div> -->
+        </div>
 
         <main class="main-content">
         <!-- profile card -->
         <section class="card-section">
-            <div class="profile-card" >
-    
-                <img style="
-                width: 100%; 
-                border-radius: 15px;"
-                src="asset/img/gambar.jpg" alt="gambar">
-    
-                <h1>hallo dumbways</h1>
-    
-                <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-    
-                <table class="table table-striped table-hover">
-                    <tr>
-                        <th>experiance</th>
-                        <th>year</th>
-                    </tr>
-                    <tr>
-                        <td>develop personal web </td>
-                        <td>2025</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
+        <div class="profile-card" >
+
+            <img style="
+            width: 100%; 
+            border-radius: 15px;"
+            src="asset/img/gambar.jpg" alt="gambar">
+
+            <h1>hallo dumbways</h1>
+
+            <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+
+            <table class="profile-table">
+                <tr>
+                    <th style="border-style:solid;">experiance</th>
+                    <th style="border-style: solid;">year</th>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; text-align: center;">develop personal web </td>
+                    <td style="border-style: solid;text-align: center;">2025</td>
+                </tr>
+            </table>
+        </div>
+    </section>
 
         <!-- introduction -->
         <section id="introduction">
