@@ -9,7 +9,7 @@ let testimonials =[
         author:"joko",
         rating:2,
         caption:"mantap sekali,tapi....",
-        image:"coding.jpg",
+        image:"gambar.jpg",
     },
     {
         author:"sri",
@@ -37,7 +37,7 @@ const testimonialsHTML= (daftarTestimonial)=>{
     return daftarTestimonial.map(
         (testimonial)=>`
         <article>
-            <img src="asset/img/${testimonial.image}" alt="">
+            <img src="/img/${testimonial.image}" alt="">
             <p class="testimonial-item" >${testimonial.caption}</p>
             <p style="text-align: right;">${testimonial.author}</p>
             <p style="text-align: right;font-weight: bold;">${testimonial.rating}</p>

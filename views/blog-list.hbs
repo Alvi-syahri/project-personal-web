@@ -1,0 +1,36 @@
+{{#>layout currentPage='Blog'}}
+<main>
+    <h1 style="text-align: center;margin-top:50px">My Blog</h1>
+    <div style="width: 90%; margin:10px auto; text-align:right">
+        <a href="blog-create" class="blog-create-button">Create Blog</a>
+    </div>
+    <!-- blog list -->
+    <section id="blogList" class="blog-list">
+
+        {{#each blogs}}
+        <article class="blog-item">
+            <div class="blog-item-img">
+                <img src={{this.image}} alt="">
+            </div>
+            <div class="blog-item-text">
+                <div class="blog-item-button">
+                    
+                    <form style="display: inline;" action="/blog/{{@index}}?_method=DELETE" method="post">
+                        <button onclick="return confirm('are you sure want to delete')" class="btn btn-danger">Delete Blog</button>
+                    </form>
+                    <a href="/blog-edit/{{@index}}"><button class="btn btn-primary">Edit Blog</button></a>
+                    
+                    
+                </div>
+                
+                <a href="/blog-detail/{{@index}}" style="text-decoration: none; color:rgb(96, 92, 92)">
+                <h1>{{this.title}}</h1></a>
+                <p>{{formatDateToWIB this.postedAt}} | {{this.author}}</p>
+                <p>{{this.content}}</p>
+                
+            </div>
+        </article>
+        {{/each}}
+    </section>
+</main>
+{{/layout}}

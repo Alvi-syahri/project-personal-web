@@ -1,0 +1,21 @@
+{{#>layout currentPage='Blog'}}
+
+        {{#each blogs}}
+        <article class="blog-item">
+            <div class="blog-item-img">
+                <img src={{this.image}} alt="">
+            </div>
+            <div class="blog-item-text">
+                <div class="blog-item-button">
+                    <button>Edit Blog</button>
+                    <button>Post Blog</button>
+                </div>
+                <h1>{{this.title}}</h1>
+                <p>{{formatDateToWIB this.postedAt}} | {{this.author}}</p>
+                <p>{{this.content}}</p>
+            </div>
+        </article>
+        {{/each}}
+    </section>
+</main>
+{{/layout}}

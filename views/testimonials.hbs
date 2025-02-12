@@ -1,0 +1,38 @@
+{{#>layout currentPage='Testimonials'}}
+        <link rel="stylesheet" href="/css/testimonials.css">
+        {{!-- <div id="mobile-menu-list" class="mobile-menu-list mobile-menu-hide">
+            <a href="index.html" >Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact me</a>
+        </div> --}}
+
+        <!-- main content testimonials-->
+
+        <main>
+            <h1 style="text-align: center;">My Testimonial</h1>
+            <h3 style="text-align: center;">Rating by star</h3>
+
+            <!-- star button -->
+             <div class="testimonials-star-button">
+                <button onclick="showAllTestimonials()" >all</button>
+                <button onclick="filterTestimonialsByStar(1)">1★</button>
+                <button onclick="filterTestimonialsByStar(2)">2★</button>
+                <button onclick="filterTestimonialsByStar(3)">3★</button>
+                <button onclick="filterTestimonialsByStar(4)">4★</button>
+                <button onclick="filterTestimonialsByStar(5)">5★</button>
+             </div>
+
+             <!-- testimonial list -->
+              <div id="testimonialsContainer" class="testimonial-list" >
+                <!-- <article>
+                    <img src="/img/coding.jpg" alt="">
+                    <p class="testimonial-item" >"keren banget website nya"</p>
+                    <p style="text-align: right;">Alvi syahri</p>
+                    <p style="text-align: right;font-weight: bold;">5★</p>
+                </article> -->
+                <p>Loading....</p>
+              </div>
+        </main>
+    
+        
+       {{/layout}}

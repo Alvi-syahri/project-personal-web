@@ -1,0 +1,36 @@
+{{#>layout currentPage='Create Blog'}}
+       
+        <!-- edit blog-->
+    <main>
+        
+        <form id="create-blog" action="/blog-update/{{index}}?_method=PATCH" method="post" class="create-blog-form">
+            <h1 style="text-align: center;">Edit Blog</h1>
+
+            <div class="form-field">
+                <label for="title">judul</label>
+                <input name="title" id="title" type="text" value="{{blog.title}}" required>
+            </div>
+
+            <div class="form-field">
+                <label for="content">content</label>
+            <textarea name="content" id="content" rows="7" required>{{blog.content}}</textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="image">Upload Image</label>
+                <input
+                  type="file"
+                  id="image"
+                  name="Image"
+                  accept="image/*"
+                />
+              </div>
+
+            <div class="button-container">
+                <button type="submit">submit</button>
+            </div>
+
+        </form>
+</main>
+        
+{{/layout}}
