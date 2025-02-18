@@ -6,7 +6,8 @@ const path= require('path')
 const { title } = require('process')
 const methodOverride = require('method-override')
 
-const {renderBlog,renderBlogDate,renderBlogEdit,createBlog,deletBlog,updateBlog}=require('./controllers/controller-v1')
+// const {updateBlog}=require('./controllers/controller-v1')
+const{renderBlog,renderBlogDetail,renderBlogEdit,deletBlog,createBlog,updateBlog}=require('./controllers/controller-v2')
 const {formatDateToWIB}= require('./utils/time')
 
 app.set('view engine','hbs')
@@ -53,7 +54,7 @@ app.patch('/blog-update/:id',updateBlog)
 app.delete('/blog/:id',deletBlog)
 
 // blog detail
-app.get('/blog/:id',renderBlogDate)
+app.get('/blog/:id',renderBlogDetail)
 
 // testimonials
 app.get('/testimonials', (req, res) => {
@@ -65,9 +66,14 @@ app.get('/contact', (req, res) => {
     res.render('contact')
 })
 
+app.get("*",(req,res)=>{
+    res.render('page-404')
+})
+
 app.listen(port, () => {
     console.log(`${port}`)
 })
+
 
 
 
